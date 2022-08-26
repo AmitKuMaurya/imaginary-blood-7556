@@ -61,6 +61,7 @@ export default function LowerNavbar() {
                 </div>
 
             </div>
+            <img className={styles.Makeup_advertise} src="https://www.beautybebo.com/pub/media/blue_heaven.jpg" alt="Banner" />
         </>
     )
 }
