@@ -1,0 +1,18 @@
+.box_margin{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.sales_margin{
+    margin-top: 1rem;
+    /* margin-bottom: 0.8rem; */
+}
+.ocean{
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid red;
+}
+.Bottom_footer{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}

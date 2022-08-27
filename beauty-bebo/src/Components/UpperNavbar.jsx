@@ -36,7 +36,7 @@ export default function UpperNavbar() {
                         <Input type="text" placeholder="Enter your search.." size='md' />
                     </Box>
 
-                    <Button _hover={{ bg: "pink.500" }} borderRadius='0px' bg={"pink.500"}><SearchIcon color="white" /></Button>
+                    <Button _hover={{ bg: "#dd0285" }} borderRadius='0px' bg={"#dd0285"}><SearchIcon color="white" /></Button>
 
                     {/* <WarningIcon  color="red.500" /> */}
 
