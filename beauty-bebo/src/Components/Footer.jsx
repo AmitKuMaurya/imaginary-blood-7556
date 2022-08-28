@@ -3,7 +3,7 @@ import sytles from "./Footer.module.css"
 
 export default function FooterComponent() {
     return (
-        <SimpleGrid column={[1, 2, 3, 4]} bg={"#232323"} className={sytles.ocean} >
+        <SimpleGrid column={[1, 2, 3, 4]} marginTop={"0.8rem"} bg={"#232323"} className={sytles.ocean} >
             <Flex margin={"auto"} justifyContent="flex-start" width={"80%"} paddingBottom={"2rem"} borderBottom={"1px solid white"}>
                 <Flex flexDirection='column' color='white' marginRight={"8rem"} >
                     <Heading className={sytles.box_margin} as='h3' size='sm' noOfLines={1}>

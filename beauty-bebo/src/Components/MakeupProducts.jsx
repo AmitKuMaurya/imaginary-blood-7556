@@ -4,24 +4,25 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 function getProducts() {
-    return fetch(`https://dry-forester-heroku.herokuapp.com/arrival_data`)
+    return fetch(`https://dry-forester-heroku.herokuapp.com/makeup_data`)
         .then((res) => res.json());
 }
 
-export default function ArrivalProducts() {
+export default function MakeupProducts() {
 
     const [data, setData] = useState([]);
 
     useEffect(() => {
         getProducts().then((res) => {
             setData(res)
-            console.log(res)
+            console.log(res);
         })
     }, []);
 
     console.log(data);
 
     return (
+        <>
         <SimpleGrid column={[1, 2, 3, 4]} display={"grid"} templateColumns='repeat(4, 1fr)' gap={6} width={"80%"} margin={"auto"} >
             {
                 data.map((item) => {
@@ -43,7 +44,7 @@ export default function ArrivalProducts() {
                                         as='h4'
                                         lineHeight='tight'
                                         noOfLines={1}
-                                    >
+                                        >
                                         {item.title}
                                     </Box>
 
@@ -59,10 +60,10 @@ export default function ArrivalProducts() {
                                             .fill('')
                                             .map((_, i) => (
                                                 <StarIcon
-                                                    key={i}
-                                                    color={i < item.raings ? 'teal.500' : 'gray.300'}
+                                                key={i}
+                                                color={i < item.raings ? 'teal.500' : 'gray.300'}
                                                 />
-                                            ))}
+                                                ))}
                                         <Box as='span' ml='2' color='gray.600' fontSize='sm'>
                                             {item.rating} reviews
                                         </Box>
@@ -76,5 +77,7 @@ export default function ArrivalProducts() {
             }
 
         </SimpleGrid>
+        <Image margin={"auto"} width={"80%"} marginTop={"0.8rem"} src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" />
+            </>
     )
 }
