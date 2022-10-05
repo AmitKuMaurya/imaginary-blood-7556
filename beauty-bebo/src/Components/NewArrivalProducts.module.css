@@ -1,0 +1,26 @@
+.main_arrival{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 0.7rem; 
+}
+
+.owl_dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+}
+
+.owl_dot {
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    background: #222;
+    margin-left: 0.1rem;
+}
+.owl_dot:hover{
+    cursor: pointer;
+    background-color: rgb(181, 60, 80);
+}

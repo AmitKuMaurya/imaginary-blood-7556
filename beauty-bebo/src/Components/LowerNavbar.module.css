@@ -1,0 +1,32 @@
+
+.main_section{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: auto auto;
+    gap: 5%;
+    padding: 5px 1px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 0.6rem;
+}
+
+.Left_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.each_section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-top: 0.8rem;
+}
+
+.Makeup_advertise{
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    margin-top: 0.8rem;
+}
